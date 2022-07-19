@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnakeGame</title>
+    <link rel="shortcut icon" href="img/snakeImage.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dropdown" style="float: right">
+      <button class="dropbtn">Choose Difficulty</button>
+      <div class="dropdown-content">
+        <a onclick="setSpeed(5)">Easy</a>
+        <a onclick="setSpeed(10)">Medium</a>
+        <a onclick="setSpeed(15)">Hard</a>
+        <a onclick="setSpeed(20)">Expert</a>
+      </div>
+    </div>
+
+    <div class="gameContainer">
+      <img src="img/snakeImage.png" alt="" />
+      <div class="scoreBoard">Your Score: 0</div>
+      <div class="hiScoreBoard">Highest Score: 0</div>
+      <div class="gameBoard"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
